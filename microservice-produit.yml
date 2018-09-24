@@ -1,0 +1,51 @@
+######################################################
+# ---- (01.)SERVER PORT CONFIGURATION ----
+######################################################
+server:
+    port: 9001
+
+######################################################
+# ---- (02.)SPRING-CONFIGURATION ----
+######################################################
+#spring:
+# ---- SPRING-DATASOURCE-CONFIGURATION ----
+#  datasource:
+#    url: "jdbc:mariadb://localhost:3306/productdb?createDatabaseIfNotExist=true"
+#    username: "root"
+#    password: "tcharou"
+#    driverClassName: "com.mysql.cj.jdbc.Driver"
+#    driverClassName: "org.mariadb.jdbc.Driver"
+# ---- SPRING-JPA-CONFIGURATION ----
+#  jpa:
+#    hibernate:
+#      ddl-auto: "update"
+#    properties:
+#      hibernate:
+#        dialect=org.hibernate.dialect.MariaDBDialect
+
+######################################################
+# ---- (03.)SPRING-CONFIGURATION ----
+######################################################
+spring:
+  # ---- SPRING-JPA-CONFIGURATION ----
+  jpa:
+    show-sql: true
+    h2:
+      console:
+        enabled: true
+  # ---- SPRING-DATASOURCE-CONFIGURATION ----
+  datasource:
+    sql-script-encoding: "UTF-8"
+
+######################################################
+# ---- (04.)LOGGING CONFIGURATION ----
+######################################################
+logging:
+    config: "classpath:log4j2-spring.xml"
+
+######################################################
+# ---- (05.)MY CONFIGURATION ----
+######################################################
+ma-config:
+    produitNombreMax: 2
+    
