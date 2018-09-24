@@ -1,8 +1,8 @@
 ######################################################
-# ---- (01.)SERVER PORT CONFIGURATION ----
+# ---- (01.)SERVER-PORT-CONFIGURATION ----
 ######################################################
 server:
-    port: 9001
+  port: 9001
 
 ######################################################
 # ---- (02.)SPRING-CONFIGURATION ----
@@ -38,10 +38,10 @@ spring:
     sql-script-encoding: "UTF-8"
 
 ######################################################
-# ---- (04.)LOGGING CONFIGURATION ----
+# ---- (04.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
-    config: "classpath:log4j2-spring.xml"
+  config: "classpath:log4j2-spring.xml"
 
 ######################################################
 # ---- (05.)MY CONFIGURATION ----
