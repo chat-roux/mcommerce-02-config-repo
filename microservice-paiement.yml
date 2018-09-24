@@ -38,13 +38,22 @@ spring:
     sql-script-encoding: "UTF-8"
 
 ######################################################
-# ---- (04.)LOGGING-CONFIGURATION ----
+# ---- (04.)ACTUATOR-CONFIGURATION ----
+######################################################
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    
+######################################################
+# ---- (05.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (05.)MY CONFIGURATION ----
+# ---- (06.)MY CONFIGURATION ----
 ######################################################
 ma-config:
   parametreDExemple: 12

@@ -5,13 +5,22 @@ server:
   port: 9000
 
 ######################################################
-# ---- (04.)LOGGING-CONFIGURATION ----
+# ---- (02.)ACTUATOR-CONFIGURATION ----
+######################################################
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    
+######################################################
+# ---- (03.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (05.)MY CONFIGURATION ----
+# ---- (04.)MY CONFIGURATION ----
 ######################################################
 ma-config:
   parametreDExemple: 12
