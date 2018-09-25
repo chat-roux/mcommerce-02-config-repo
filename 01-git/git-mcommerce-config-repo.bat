@@ -35,17 +35,17 @@ git remote add distant git@github.com:chat-roux/mcommerce-config-repo.git
 git remote rm distant
 
 ##############################################################################
-# (06.)RECUPERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
-#      -->REPOSITORY DISTANT A RECUPERER         : LA "CIBLE" PRE-ENREGISTREE.
-#      -->REPOSITORY LOCAL DANS LEQUEL RECUPERER : LE REPOSITORY LOCAL COURANT.
-#      -->TYPE DE RECUPERATION : RECUPERATION SANS ECRASEMENT.
+# (06.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
+#      -->ORIGINE DU TRANSFERT     : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
+#      -->DESTINATION DU TRANSFERT : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
+#      -->TYPE DE TRANSFERT : TRANSFERT SANS ECRASEMENT.
 ##############################################################################
 git fetch
 
 ##############################################################################
 # (07.)TRANSFERER LE CONTENU DU REPOSITORY LOCAL DANS LE REPOSITORY DISTANT :
-#      -->REPOSITORY DISTANT A RECUPERER         : LA "CIBLE" PRE-ENREGISTREE.
-#      -->REPOSITORY LOCAL DANS LEQUEL RECUPERER : LE REPOSITORY LOCAL COURANT.
-#      -->TYPE DE RECUPERATION : RECUPERATION AVEC ECRASEMENT.
+#      -->ORIGINE DU TRANSFERT     : LE REPERTOIRE COURANT (REPOSITORY LOCAL COURANT).
+#      -->DESTINATION DU TRANSFERT : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
+#      -->TYPE DE TRANSFERT : TRANSFERT AVEC ECRASEMENT.
 ##############################################################################
 git push -u distant master
