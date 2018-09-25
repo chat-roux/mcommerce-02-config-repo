@@ -56,5 +56,5 @@ logging:
 # ---- (06.)MY CONFIGURATION ----
 ######################################################
 ma-config:
-    produitNombreMax: 2
+    produitNombreMax: 5
     
