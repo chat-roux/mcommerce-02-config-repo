@@ -47,13 +47,21 @@ management:
         include: "*"
     
 ######################################################
-# ---- (05.)LOGGING-CONFIGURATION ----
+# ---- (05.)EUREKA-CONFIGURATION ----
+######################################################
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: "http://localhost:9102/eureka/"
+
+######################################################
+# ---- (06.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (06.)MY CONFIGURATION ----
+# ---- (07.)MY CONFIGURATION ----
 ######################################################
 ma-config:
     produitNombreMax: 5

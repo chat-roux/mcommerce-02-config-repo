@@ -21,7 +21,7 @@ logging:
     config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (06.)MY CONFIGURATION ----
+# ---- (04.)MY CONFIGURATION ----
 ######################################################
 ma-config:
     parametreDExemple: 22
