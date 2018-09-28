@@ -18,7 +18,9 @@ management:
 ######################################################
 microservice-produit:
   ribbon:
-    listOfServers: localhost:9010,localhost:9011
+    listOfServers: 
+        - localhost:9010
+        - localhost:9011
 
 ######################################################
 # ---- (04.)EUREKA-CONFIGURATION ----
