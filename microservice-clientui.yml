@@ -1,8 +1,8 @@
 ######################################################
 # ---- (01.)SERVER-PORT-CONFIGURATION ----
 ######################################################
-server:
-  port: 9000
+#server:
+#  port: 9000
 
 ######################################################
 # ---- (02.)ACTUATOR-CONFIGURATION ----
@@ -16,18 +16,28 @@ management:
 ######################################################
 # ---- (03.)RIBBON-CONFIGURATION ----
 ######################################################
-microservice-produits:
+microservice-produit:
   ribbon:
-    listOfServers: localhost:9010, localhost:9011
+    listOfServers: 
+        -localhost:9010
+        -localhost:9011
 
 ######################################################
-# ---- (03.)LOGGING-CONFIGURATION ----
+# ---- (04.)EUREKA-CONFIGURATION ----
+######################################################
+#eureka:
+#    client:
+#        serviceUrl:
+#            defaultZone: "http://localhost:9102/eureka/"
+
+######################################################
+# ---- (05.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (04.)MY CONFIGURATION ----
+# ---- (06.)MY CONFIGURATION ----
 ######################################################
 ma-config:
   parametreDExemple: 12
