@@ -14,19 +14,27 @@ management:
         include: "*"
     
 ######################################################
-# ---- (03.)RIBBON-CONFIGURATION ----
-######################################################
-microservice-produit:
-  ribbon:
-    listOfServers: "localhost:9010,localhost:9011"
-
-######################################################
-# ---- (04.)EUREKA-CONFIGURATION ----
+# ---- (03.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
   client:
       serviceUrl:
           defaultZone: "http://localhost:9102/eureka/"
+
+######################################################
+# ---- (04.)RIBBON-CONFIGURATION ----
+######################################################
+microservice-produit:
+  ribbon:
+    listOfServers: "localhost:9010,localhost:9011"
+
+microservice-commande:
+  ribbon:
+    listOfServers: "localhost:9020"
+
+microservice-paiement:
+  ribbon:
+    listOfServers: "localhost:9030"
 
 ######################################################
 # ---- (05.)LOGGING-CONFIGURATION ----

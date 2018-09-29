@@ -55,13 +55,20 @@ eureka:
       defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
-# ---- (06.)LOGGING-CONFIGURATION ----
+# ---- (06.)RIBBON-CONFIGURATION ----
+######################################################
+microservice-commande:
+  ribbon:
+    listOfServers: "localhost:9020"
+
+######################################################
+# ---- (07.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (07.)MY CONFIGURATION ----
+# ---- (08.)MY CONFIGURATION ----
 ######################################################
 ma-config:
   parametreDExemple: 12
