@@ -21,14 +21,14 @@ microservice-produit:
     listOfServers: 
       - "localhost:9010"
       - "localhost:9011"
-      
+
 ######################################################
 # ---- (04.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: "http://localhost:9102/eureka/"
+  client:
+      serviceUrl:
+          defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
 # ---- (05.)LOGGING-CONFIGURATION ----
