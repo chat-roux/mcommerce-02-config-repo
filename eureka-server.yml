@@ -2,7 +2,7 @@
 # ---- (01.)SERVER-PORT-CONFIGURATION ----
 ######################################################
 server:
-    port: 9102
+  port: 9102
 
 ######################################################
 # ---- (02.)ACTUATOR-CONFIGURATION ----
@@ -12,26 +12,26 @@ management:
     web:
       exposure:
         include: "*"
-    
+
 ######################################################
 # ---- (03.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
-    client:
-        registerWithEureka: false
-        fetchRegistry: false
-        serviceUrl:
-            defaultZone: "http://localhost:9102/eureka/"
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+        defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
 # ---- (04.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
-    config: "classpath:log4j2-spring.xml"
+  config: "classpath:log4j2-spring.xml"
 
 ######################################################
 # ---- (05.)MY CONFIGURATION ----
 ######################################################
 ma-config:
-    parametreDExemple: 22
+  parametreDExemple: 22
   
