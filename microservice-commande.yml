@@ -50,9 +50,9 @@ management:
 # ---- (05.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: "http://localhost:9102/eureka/"
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
 # ---- (06.)LOGGING-CONFIGURATION ----

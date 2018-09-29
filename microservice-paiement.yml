@@ -35,7 +35,7 @@ spring:
       enabled: true
   # ---- SPRING-DATASOURCE-CONFIGURATION ----
   datasource:
-    sql-script-encoding: "UTF-8"
+    sql-script-encoding: UTF-8
 
 ######################################################
 # ---- (04.)ACTUATOR-CONFIGURATION ----
@@ -50,9 +50,9 @@ management:
 # ---- (05.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: "http://localhost:9102/eureka/"
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
 # ---- (06.)LOGGING-CONFIGURATION ----
