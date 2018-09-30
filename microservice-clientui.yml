@@ -27,11 +27,11 @@ eureka:
 #microservice-produit:
 #  ribbon:
 #    listOfServers: "localhost:9010,localhost:9011"
-#
+
 #microservice-commande:
 #  ribbon:
 #    listOfServers: "localhost:9020"
-#
+
 #microservice-paiement:
 #  ribbon:
 #    listOfServers: "localhost:9030"
