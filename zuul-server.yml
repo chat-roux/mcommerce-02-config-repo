@@ -24,3 +24,11 @@ logging:
 ma-config:
   parametreDExemple: 40
   
+######################################################
+# ---- (05.)SPRING-CLOUD-SECURITY-CONFIGURATION ----
+######################################################
+spring:
+  security:
+    user:
+      name: "utilisateur"
+      pasword: "mdp"
