@@ -31,4 +31,4 @@ spring:
   security:
     user:
       name: "utilisateur"
-      pasword: "mdp"
+      password: "mdp"
