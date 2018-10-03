@@ -5,7 +5,16 @@ server:
   port: 9103
 
 ######################################################
-# ---- (02.)EUREKA-CONFIGURATION ----
+# ---- (02.)ACTUATOR-CONFIGURATION ----
+######################################################
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+######################################################
+# ---- (03.)EUREKA-CONFIGURATION ----
 ######################################################
 eureka:
   client:
@@ -13,22 +22,23 @@ eureka:
       defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
-# ---- (03.)LOGGING-CONFIGURATION ----
+# ---- (04.)LOGGING-CONFIGURATION ----
 ######################################################
 logging:
   config: "classpath:log4j2-spring.xml"
 
 ######################################################
-# ---- (04.)MY CONFIGURATION ----
-######################################################
-ma-config:
-  parametreDExemple: 40
-  
-######################################################
-# ---- (05.)SPRING-CLOUD-SECURITY-CONFIGURATION ----
+# ---- (05.)SPRING-SECURITY-CONFIGURATION ----
 ######################################################
 spring:
   security:
     user:
       name: "utilisateur"
       password: "mdp"
+
+######################################################
+# ---- (06.)MY CONFIGURATION ----
+######################################################
+ma-config:
+  parametreDExemple: 40
+  
