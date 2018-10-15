@@ -47,6 +47,12 @@ zuul:
   host:
     socket-timeout-millis: 5000
     connect-timeout-millis: 5000
+  #ignoredServices: '*'
+  routes:
+    application:
+      #path: /application/**
+      #serviceId: application
+      sensitive-headers: Cookie,Set-Cookie,Authorization
 
 ######################################################
 # ---- (07.)RIBBON-CONFIGURATION ----
