@@ -47,11 +47,10 @@ zuul:
   host:
     socket-timeout-millis: 5000
     connect-timeout-millis: 5000
-  #ignoredServices: '*'
   routes:
     application:
-      #path: /application/**
-      #serviceId: application
+      path: /microservice-commande/**
+      serviceId: microservice-commande
       sensitive-headers: Cookie,Set-Cookie,Authorization
 
 ######################################################
