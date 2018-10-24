@@ -48,17 +48,20 @@ zuul:
     socket-timeout-millis: 5000
     connect-timeout-millis: 5000
   routes:
-    application:
+    commande:
+      path: /microservice-produit/**
+      serviceId: microservice-produit
+      sensitive-headers: 
+    commande:
       path: /microservice-commande/**
       serviceId: microservice-commande
-      sensitive-headers: Cookie,Set-Cookie,Authorization
-
+      sensitive-headers: 
 ######################################################
 # ---- (07.)RIBBON-CONFIGURATION ----
 ######################################################
 ribbon:
-    ConnectTimeout: 5000
-    ReadTimeout: 5000
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
 
 ######################################################
 # ---- (08.)LOGGING-CONFIGURATION ----
