@@ -48,7 +48,7 @@ zuul:
     socket-timeout-millis: 5000
     connect-timeout-millis: 5000
   routes:
-    commande:
+    produit:
       path: /microservice-produit/**
       serviceId: microservice-produit
       sensitive-headers: 
