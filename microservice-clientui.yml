@@ -16,10 +16,10 @@ management:
 ######################################################
 # ---- (03.)EUREKA-CONFIGURATION ----
 ######################################################
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: "http://localhost:9102/eureka/"
+#eureka:
+  #client:
+    #serviceUrl:
+      #defaultZone: "http://localhost:9102/eureka/"
 
 ######################################################
 # ---- (04.)RIBBON-CONFIGURATION ----
